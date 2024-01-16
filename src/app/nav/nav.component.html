@@ -1,0 +1,20 @@
+
+<mat-toolbar color="primary">
+    
+    <div>
+      <img src="chemin/vers/votre/logo.png" alt="Logo" height="40">
+    </div>
+  
+    <!-- Onglet déroulant "M'orienter" -->
+    <button mat-button [matMenuTriggerFor]="morienterMenu">M'orienter</button>
+    <mat-menu #morienterMenu="matMenu">
+      <button mat-menu-item routerLink="/cursus">Cursus</button>
+      <button mat-menu-item routerLink="/metiers">Métiers</button>
+    </mat-menu>
+  
+    <a mat-button routerLink="/culture">Culture</a>
+    <a mat-button routerLink="/atelier-portfolio">Atelier Portfolio</a>
+    <a mat-button routerLink="/carnet-de-bord">Carnet de Bord</a>
+    <a mat-button routerLink="/lasso">L'Asso</a>
+  </mat-toolbar>
+  

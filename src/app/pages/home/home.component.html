@@ -1,8 +1,21 @@
-<div>
-    <button mat-raised-button color="primary" [routerLink]="'src\app\pages\culture-numerique'">Découvre la culture numérique</button>
-    <button mat-raised-button color="primary" [routerLink]="'src\app\pages\fonctionnement-appli'">Comment fonctionne une appli ?</button>
-    <button mat-raised-button color="primary" [routerLink]="'src\app\pages\portfolio'">Crée ton portfolio</button>
-    <button mat-raised-button color="primary" [routerLink]="'src\app\pages\metiers'">Découvre les métiers</button>
-    <button mat-raised-button color="primary" [routerLink]="'src\app\pages\carnet-de-bord'">Remplis ton carnet de bord</button>
-    <button mat-raised-button color="primary" [routerLink]="'src\app\pages\cursus'">Trouve un cursus adapté</button>
-  </div>  
+
+<div class="home-contenu">
+
+<div class="message-bienvenue">
+  <p>Tu cherches une orientation, un métier dans la Tech? 
+    <br>
+    Tu as besoins d’informations claires pour choisir un cursus adapté à ton profil et des connaissances clés pour te construire une candidature solide ? 
+    <br>
+    Tu es au bon endroit !</p>
+</div>
+
+<div class="'boutons">
+  <button mat-raised-button color="primary" [routerLink]="['./culture-numerique']">Découvre la culture numérique</button>
+  <button mat-raised-button color="primary" [routerLink]="['./fonctionnement-appli']">Comment fonctionne une appli ?</button>
+  <button mat-raised-button color="primary" [routerLink]="['./portfolio']">Crée ton portfolio</button>
+  <button mat-raised-button color="primary" [routerLink]="['./metiers']">Découvre les métiers</button>
+  <button mat-raised-button color="primary" [routerLink]="['./carnet-de-bord']">Remplis ton carnet de bord</button>
+  <button mat-raised-button color="primary" [routerLink]="['./cursus']">Trouve un cursus adapté</button>
+</div>
+
+</div>

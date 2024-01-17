@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
@@ -13,11 +15,11 @@ import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
     NavComponent,
     FooterComponent
   ],
   imports: [
+    RouterModule.forRoot([]),
     BrowserModule,
     AppRoutingModule, 
     MatToolbarModule,
@@ -27,4 +29,5 @@ import { FooterComponent } from './footer/footer.component';
   providers: [],
   bootstrap: [AppComponent],
 })
+
 export class AppModule { }

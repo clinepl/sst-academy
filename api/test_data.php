@@ -3,10 +3,6 @@ header('Access-Control-Allow-Headers: Access-Control-Allow-Origin, Content-Type'
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json, charset=utf-8');
 
-// Your PHP code...
-
-
-// Sample data array
 $testData = [
     "message" => "Hello from PHP",
     "data" => [
@@ -17,6 +13,6 @@ $testData = [
     "status" => "success"
 ];
 
-// Encode data to JSON and output
+
 echo json_encode($testData);
 ?>
